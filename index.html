@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cit.vlute</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/fontawaesome/fontawaesome/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="./asset/img/logo.png">
+</head>
+<div>
+    <!-- Header -->
+   <div id="main">
+       <div id="header">
+           <!-- Begin: Nav -->
+           <ul id="nav">
+                <a href="">
+                    <img class="logo-vlute" src="./asset/img/logo.png" alt="logo">
+                </a>
+               <li>
+                   <a href="#lookup">
+                    Tra cứu
+                    <i class="fa-solid fa-caret-down"></i>
+                   </a>
+                   <ul class="subnav-search">
+                    <li><a href="#">Lịch học</a></li>
+                    <li><a href="#">Lịch thi</a></li>
+                    <li><a href="#">Kết quả thi</a></li>
+                    <li><a href="#">Tra cứu chứng chỉ</a></li>
+                 </ul>
+                </li>
+                <li>
+                    <a href="#educate-program">
+                        Chương trình đào tạo
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav-educate">
+                        <li><a href="#">Ứng dụng công nghệ thông tin cơ bản</a></li>
+                        <li><a href="#">Ứng dụng công nghệ thông tin nâng cao</a></li>
+                        <li><a href="#">Các lớp chuyên đề</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Hệ thống thi trực tiếp</a></li>
+                <li><a href="#">Quản lý giảng dạy</a></li>
+                <li><a href="#">Quản lý phòng thi</a></li>
+                <li><a href="#footer">Liên hệ</a></li>
+            </ul>
+            <!-- End: Nav -->
+        </div>
+    </div>
+    <!-- Slider -->
+    <div id="slider">
+        <div id="slideshow">
+            <div class="mySlides fade">
+              <img src="./asset/img/01.png">
+            </div>
+            <div class="mySlides fade">
+              <img src="./asset/img/02.png">
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div> 
+            <a class="prev" onclick="plusSlides(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+          <br>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- Content -->
+    <div id="content">
+        <!-- About section -->
+        <div id="educate-program">
+            <div class="content-section">
+                <h3 class="section-heading font-bold">CHƯƠNG TRÌNH ĐÀO TẠO</h3>
+                <p class="about-text">
+                    Trung tâm Ngoại ngữ - Tin học thường xuyên khai giảng các lớp Ứng dụng công nghệ thông tin Cơ bản/Nâng cao và các lớp chuyên đề với nội dung chất lượng được cập nhật theo công nghệ mới góp phần đồng hành cùng bạn trên hành trình chinh phục tri thức - vững vàng bước vào thế giới công nghệ 4.0.
+                </p>
+                <div class="subject-list">
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/UDCNTTCB.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Chứng chỉ UDCNTT Cơ bản</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/UDCNTTNC.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Chứng chỉ UDCNTT Nâng cao</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/IoT.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Phát triển ứng dụng IoT</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/Mobile.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Lập trình di động</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/TKDH.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Thiết kế đồ họa</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/QTM.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Quản trị mạng Doanh nghiệp</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/CMTT.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Cáp mạng Thông tin</p>
+                    </div>
+                    <div class="subject-item col-fouth">
+                        <img src="./asset/img/WEB.png" alt="" class="subject-img">
+                        <p class="subject-name font-bold">Thiết kế Website</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lookup-section -->
+        <div id="lookup">
+            <div class="lookup-section">
+                <h3 class="lookup-heading">
+                    TIỆN ÍCH - TRA CỨU THÔNG TIN, VĂN BẰNG CHỨNG CHỈ
+                </h3>
+                <p class="lookup-text">
+                    Học viên Trung tâm có thể tra cứu thông tin về khóa học, chứng chỉ đã học và thi tại Trung tâm
+                </p>
+                <div class="lookup-list">
+                    <div class="lookup-item col-third">
+                        <img src="./asset/img/3652191.png" alt="" class="lookup-img">
+                        <a href="#lookup" class="lookup-name">
+                            <h4>Tra cứu lịch học</h4></a>
+                        <a href="#lookup" class="sub-lookup-name">
+                            Học viên sử dụng số CMND/CCCD để tra cứu lịch học của mình
+                        </a>
+                    </div>
+                    <div class="lookup-item col-third">
+                        <img src="./asset/img/2666539.png" alt="" class="lookup-img">
+                        <a href="#lookup" class="lookup-name">
+                            <h4>Tra cứu Lịch thi</h4>
+                        </a>
+                        <a href="#lookup" class="sub-lookup-name">
+                            Học viên sử dụng số CMND/CCCD để tra cứu lịch học của mình
+                        </a>
+                    </div>
+                    <div class="lookup-item col-third">
+                        <img src="./asset/img/2490354.png" alt="" class="lookup-img">
+                        <a href="#lookup" class="lookup-name">
+                            <h4>Tra cứu Kết quả thi Chứng chỉ</h4>
+                        </a>
+                        <a href="#lookup" class="sub-lookup-name">
+                            Khoảng 2 tuần sau khi tham gia thi, thí sinh sử dụng số CMND/CCCD để tra cứu kết quả thi chứng chỉ
+                        </a>
+                    </div>
+                    <div class="lookup-item col-third">
+                        <img src="./asset/img/search.png" alt="" class="lookup-img">
+                        <a href="#lookup" class="lookup-name">
+                            <h4>Tra cứu Trạng thái hồ sơ</h4>
+                        </a>
+                        <a href="#lookup" class="sub-lookup-name">
+                            Thí sinh sau khi đăng ký và hoàn tất hồ sơ thi
+                            có thể kiểm tra trạng thái hồ sơ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Section -->
+        <div id="notification">
+            <div class="noti-section">
+                <div class="banner-heading">
+                    <h3 class="noti-heading text font-bold">
+                        GHI DANH HỌC, THI CẤP CHỨNG CHỈ TRỰC TUYẾN
+                    </h3>
+                </div>
+                <div class="banner">
+                    <div class="text-banner">
+                        <h4>
+                            <i class="fa-solid fa-info"></i>
+                                Hết hạn đăng ký
+                        </h4>
+                        <p>
+                            Các đợt đăng ký học/thi tại Trung tâm đã hết hạn.
+                            <br>
+                            Hãy thường xuyên theo dõi các thông báo tại trung tâm để biết thêm thông tin bạn nhé.
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer">
+        <div class="contact">
+
+            <div class="contact-info">
+                <div class="contact-text">
+                    <h3>
+                        THÔNG TIN LIÊN HỆ
+                    </h3>
+                    <p class="margin-text">
+                        <b>Địa chỉ:</b> Bộ môn tin học thuộc Trung tâm Ngoại ngữ - Tin học, Trường Đại Học Sư Phạm Kỹ Thuật Vĩnh Long
+                    </p>
+                    <p class="margin-text">
+                        <b>Địa chỉ:</b> Số 73, Nguyễn Huệ, Phường 2, Tp. Vĩnh Long
+                    </p>
+                    <p class="margin-text">
+                        <b>Email: </b>cit@vlute.edu.vn
+                    </p>
+                </div>
+                <div class="ggmap">
+                    <br>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.144156168644!2d105.95962111474437!3d10.249955392680071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a82ce95555555%3A0x451cc8d95d6039f8!2zVHLGsOG7nW5nIMSQSCBTxrAgcGjhuqFtIEvhu7kgdGh14bqtdCBWxKluaCBMb25n!5e0!3m2!1svi!2s!4v1632886403082!5m2!1svi!2s" style="width: 100%; height: 300px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        
+        <div class="main-footer">
+            <div class="contact-footer-text text-sm">
+                <div class="footer-text ">
+                    <p>
+                        <b>Bộ môn tin học thuộc Trung tâm Ngoại ngữ - Tin học | Trường Đại Học Sư Phạm Kỹ Thuật Vĩnh Long</b>
+                    </p>
+                    <p>
+                        Địa chỉ: Số 73, Nguyễn Huệ, Phường 2, Tp. Vĩnh Long
+                    </p>
+                    <p>
+                        Email: cit@vlute.edu.vn
+                    </p>
+                </div>
+                <div class="footer-text ">
+                    <p class="ver-1" >
+                        © 2020
+                        <br>
+                        v.24.12.2018
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
