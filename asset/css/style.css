@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    src: url(font/HelveticaNeue.otf);
+    font-family: HelveticaNeue;
+}
+
+@font-face {
+    src: url(font/Helvetica.ttf);
+    font-family: Helvetica;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+/* COMMON */
+.clear{
+    clear: both;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.font-bold {
+    font-weight: 700;
+    color: #333;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-haft{
+    float: left;
+    width: 50%;
+}
+
+.col-third {
+    float: left;
+    width: 33.3333%;
+}
+
+.col-fouth{
+    float: left;
+    width: 25%;
+}
+
+.text {
+    text-align: center;
+}
+
+.margin-text {
+    margin: 10px 0px;
+}
+
+.text-sm {
+    font-size: 12px;
+    line-height: 1.42857143;
+}
+/* MAIN */
+
+/* HEADER */
+
+/* Navigation */
+#header{
+    height: 50px;
+    background: linear-gradient(to right, #ff8008, #ffc837);;
+}
+
+#nav {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+#nav .logo-vlute {
+    max-width: 40px;
+    height: auto;
+    padding: 5px 0;
+}
+
+#nav li {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    padding: 0 15px;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Subnav search */
+#nav .subnav-search {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1000;
+    left: 0;
+    float: left;
+}
+
+#nav .subnav-search
+#nav .subnav-educate {
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+
+#nav .subnav-educate,
+.subnav-search {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 270px;
+    z-index: 1000;
+    left: 0;
+    float: left;
+}
+.subnav-educate a:visited,
+.subnav-search a:visited {
+    color: #777777;
+}
+
+.subnav-search li:hover,
+.subnav-educate li:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+#nav li:hover .subnav-educate,
+#nav li:hover .subnav-search {
+    display: block;
+}
+
+/* SLIDESHOW */
+#slider{
+    margin-top: 5px;
+    height: 350px;
+}
+#slideshow {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+#slideshow img {
+    height: 350px;
+    width: 100%;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.4s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10%;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #fff;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.dots {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+}
+
+/* CONTENT */
+#content .content-section {
+    width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin: 20px 0px 10px;
+    font-size: 24px;
+}
+
+#content .about-text {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#content .subject-item {
+    text-align: center;
+}
+
+#content .subject-name {
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+#content .subject-img {
+    width: 213px;
+    height: 121px;
+    border-radius: 10px;
+}
+
+#content .subject-img:hover {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    transition: 0.2s;
+}
+
+/* Lookup-section */
+
+#content .lookup-section {
+    height: 530px;
+    background-color: #0082c8;
+}
+
+#content .lookup-heading {
+    padding: 20px 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1;
+}
+
+#content .lookup-text {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .lookup-list {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .lookup-item {
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+#content .lookup-img {
+    width: 130px;
+    height: 130px;
+    padding: 4px;
+}
+
+#content .lookup-name {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+
+#content .sub-lookup-name {
+    font-size: 14px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    align-items: center;
+}
+
+#content .lookup-name:hover,
+#content .sub-lookup-name:hover{
+    color: yellow;
+}
+
+
+/* Notification Section */
+
+#notification {
+    height: 198px;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.banner-heading {
+    display: flex;
+    justify-content: center;
+    height: 76px;
+}
+.banner {
+    margin: 0 160px;
+    background-color: #00c0ef;
+    border: 1px solid #00acd6;
+    border-radius: 5px;
+}
+
+.text-banner {
+    padding: 15px;
+    color: #fff;
+}
+
+.banner i {
+    margin-right: 10px;
+}
+
+.text-banner p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-banner h4 {
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.contact {
+    background-color: #f9f6ef;
+    margin-top: 20px;
+    max-height: 361px;
+}
+
+.contact-text {
+    width: 40%;
+    float: left;
+    padding: 0 15px;
+}
+
+.ggmap {
+    width: 60%;
+    float: left;
+    padding: 0 15px;
+}
+
+.contact-info {
+    margin: 0 160px;
+}
+
+/* Main Footer */
+
+.main-footer {
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 1px solid #d2d6de;
+}
+
+.contact-footer-text {
+    display: flex;
+    align-items: center; 
+    margin: 0 160px;
+}
+
+.footer-text {
+    width: 100%;
+}
+
+.footer-text .ver-1 {
+    text-align: right;
+}
